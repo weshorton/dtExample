@@ -6,8 +6,8 @@
 \usage{
 tmpClassify(
   data_dt,
-  col1_v = "logFC",
-  col2_v = "FDR",
+  lfcCol_v = "logFC",
+  pvalCol_v = "FDR",
   lfc_v = 0.5,
   pval_v = c(0.01, 0.05),
   newName_v = "diffExp"
@@ -16,9 +16,9 @@ tmpClassify(
 \arguments{
 \item{data_dt}{proteomics data.table with differential expression results}
 
-\item{col1_v}{column in data_dt indicating the fold change results (logFC for TMT; Z-score for Silac)}
+\item{lfcCol_v}{column in data_dt indicating the fold change results (logFC for TMT; Z-score for Silac)}
 
-\item{col2_v}{column in data_dt indicating the significance value (FDR for TMT; BH_adjusted for Silac)}
+\item{pvalCol_v}{column in data_dt indicating the significance value (FDR for TMT; BH_adjusted for Silac)}
 
 \item{lfc_v}{value for cut-off for fold change. Will be included in plot as vertical dotted line}
 
